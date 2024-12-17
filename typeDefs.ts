@@ -6,7 +6,7 @@ export const typeDefs = `#graphql
 
     type Moves {
         name: String!,
-        power: String!
+        power: String!          
     }
     type Pokemon {
         id: ID!,
