@@ -6,7 +6,7 @@ export const typeDefs = `#graphql
 
     },
 
-    type Mutations {
+    type Mutation {
         
     }
 `
