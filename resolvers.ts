@@ -21,9 +21,9 @@ export const resolvers = {
     Query: {
         pokemon: async(
             _:unknown,
-            args: {name: string}
+            args: {nameOrId: string}
         ):Promise<JSON> => {
-            const response = await fetch("https://pokeapi.co/api/v2/pokemon/" + args.name)
+            const response = await fetch("https://pokeapi.co/api/v2/pokemon/" + args.nameOrId)
             return await response.json()
         }
     }
