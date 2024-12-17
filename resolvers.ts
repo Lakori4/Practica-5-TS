@@ -1,4 +1,4 @@
-import { Pokemon, Abilities,Moves } from "./types.ts";
+import { Abilities,Moves } from "./types.ts";
 
 export const resolvers = {
     Abilities: {
@@ -16,12 +16,6 @@ export const resolvers = {
             const aux = await response.json()
             return aux.power
         }
-    },
-    Pokemon: {
-        id: (parent: Pokemon) => parent.id,
-        name: (parent: Pokemon) => parent.name,
-        abilities: (parent: Pokemon) => parent.abilities,
-        moves: (parent: Pokemon) => parent.moves
     },
 
     Query: {
