@@ -20,9 +20,8 @@ export const resolvers = {
     Pokemon: {
         id: (parent: Pokemon) => parent.id,
         name: (parent: Pokemon) => parent.name,
-        abilities: (parent: Pokemon) => {
-            return parent.abilities
-        }
+        abilities: (parent: Pokemon) => parent.abilities,
+        moves: (parent: Pokemon) => parent.moves
     },
 
     Query: {
