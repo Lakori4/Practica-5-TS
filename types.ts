@@ -1,11 +1,16 @@
 export type Abilities = {
-    name: string,
-    effect: string
+    ability: {
+        name: string,
+        url: string
+    }
 }
 
 export type Moves = {
-    name: string,
-    power: string          
+    move: {
+        name: string,
+        url: string     
+    }
+     
 }
 export type Pokemon = {
     id: string,
